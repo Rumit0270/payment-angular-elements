@@ -2,28 +2,9 @@
   "name": "payment-angular-elements",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
     "build:lib": "ng build payment-elements",
-    "build:lib:watch": "ng build payment-elements --watch",
-    "pack:lib": "npm run build:lib && cd dist/payment-elements && npm pack",
-    "test:lib": "ng test payment-elements",
-    "prepare": "npm run build:lib"
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
+    "prepare": "npm run build:lib",
+    "postinstall": "ng build payment-elements"
   },
   "dependencies": {
     "@angular/common": "^20.2.0",
