@@ -1,9 +1,10 @@
 {
-  "name": "payment-elements",
-  "version": "0.0.1",
+  "name": "@rumit_snt/payment-elements",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^20.2.0",
-    "@angular/core": "^20.2.0"
+    "@angular/core": "^20.2.0",
+    "@angular/elements": "^20.2.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"

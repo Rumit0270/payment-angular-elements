@@ -2,9 +2,10 @@
   "name": "payment-angular-elements",
   "version": "0.0.0",
   "scripts": {
-    "build:lib": "ng build payment-elements",
+    "build:lib": "ng build payment-elements --configuration production",
     "prepare": "npm run build:lib",
-    "postinstall": "ng build payment-elements"
+    "postinstall": "ng build payment-elements",
+    "publish:lib": "npm run build:lib && cd dist/payment-elements && npm publish --access public"
   },
   "dependencies": {
     "@angular/common": "^20.2.0",
